@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{CE937136-EF99-47F2-949F-45BFB0477BD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Domain", "Core\OnionCarBook.Domain\OnionCarBook.Domain.csproj", "{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767} = {CE937136-EF99-47F2-949F-45BFB0477BD1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1468B57-8BEC-482E-A675-B44A077AEB6A}
+	EndGlobalSection
+EndGlobal
