@@ -1,6 +1,22 @@
+using OnionCarBook.Application.Features.CQRS.Handlers.AboutHandlers;
+using OnionCarBook.Application.Interfaces;
+using OnionCarBook.Persistence.Context;
+using OnionCarBook.Persistence.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<CarBookContext>();
+
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+
+builder.Services.AddScoped<GetAboutQueryHandler>();
+builder.Services.AddScoped<GetAboutByIdQueryHandler>();
+builder.Services.AddScoped<CreateAboutCommandHandler>();
+builder.Services.AddScoped<UpdateAboutCommandHandler>();
+builder.Services.AddScoped<RemoveAboutCommandHandler>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
