@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>false</InvariantGlobalization>
+    <InvariantGlobalization>false</InvariantGlobalization>  <!--.NET uygulamalarında kültürel (culture-specific) işlemleri nasıl yöneteceğinizi belirleyen bir ayardır.NET'in bulunduğu sistemin bölgesel ayarlarını kullanmasını sağlar.false: Bilgisayarın yerel ayarlarını kullanır (önerilen, eğer kullanıcıya bağlı değişiklikler gerekliyse)true: Sabit, küresel format kullanır (önerilen, eğer tüm kullanıcılar aynı formatı kullanmalıysa)-->
   </PropertyGroup>
 
   <ItemGroup>

@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.WebApi", "Presentation\OnionCarBook.WebApi\OnionCarBook.WebApi.csproj", "{323095D6-B723-433A-BF66-33704E88875D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnionCarBook.Application", "Core\OnionCarBook.Application\OnionCarBook.Application.csproj", "{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{323095D6-B723-433A-BF66-33704E88875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{323095D6-B723-433A-BF66-33704E88875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{323095D6-B723-433A-BF66-33704E88875D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{DBE9C6E9-9CC6-40C6-A04E-0050EAC33767} = {CE937136-EF99-47F2-949F-45BFB0477BD1}
 		{78D0DDF9-3F41-4968-822A-C5954917B657} = {EE502B0A-27EB-4C9A-B6E7-D65085B0CF9C}
 		{323095D6-B723-433A-BF66-33704E88875D} = {2B31BA93-A720-462C-BD38-419996982946}
+		{93223B37-D2E6-44BC-83F3-89ECD7BFA1DD} = {CE937136-EF99-47F2-949F-45BFB0477BD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1468B57-8BEC-482E-A675-B44A077AEB6A}
