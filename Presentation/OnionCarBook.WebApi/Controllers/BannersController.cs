@@ -44,4 +44,16 @@ public class BannersController : ControllerBase
         await _createBannerCommandHandler.Handle(command);
         return Ok("Banner Bilgisi Oluşturuldu.");
     }
+    [HttpDelete]
+    public async Task<IActionResult> RemoveBanner(int id)
+    {
+        await _removeBannerCommandHandler.Handle(new RemoveBannerCommand(id));
+        return Ok("Bilgiler Silindi");
+    }
+    [HttpPut]
+    public async Task<IActionResult> UpdateBanner(UpdateBannerCommand command)
+    {
+        await _updateBannerCommandHandler.Handle(command);
+        return Ok("Bilgiler Güncellendi");
+    }
 }
