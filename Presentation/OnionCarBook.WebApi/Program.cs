@@ -1,5 +1,6 @@
 using OnionCarBook.Application.Features.CQRS.Handlers.AboutHandlers;
 using OnionCarBook.Application.Features.CQRS.Handlers.BannerHandlers;
+using OnionCarBook.Application.Features.CQRS.Handlers.BrandHandlers;
 using OnionCarBook.Application.Interfaces;
 using OnionCarBook.Persistence.Context;
 using OnionCarBook.Persistence.Repositories;
@@ -23,6 +24,12 @@ builder.Services.AddScoped<GetBannerQueryHandler>();
 builder.Services.AddScoped<RemoveBannerCommandHandler>();
 builder.Services.AddScoped<UpdateBannerCommandHandler>();
 builder.Services.AddScoped<CreateBannerCommandHandler>();
+
+builder.Services.AddScoped<GetBrandByIdQueryHandler>();
+builder.Services.AddScoped<GetBrandQueryHandler>();
+builder.Services.AddScoped<RemoveBrandCommandHandler>();
+builder.Services.AddScoped<UpdateBrandCommandHandler>();
+builder.Services.AddScoped<CreateBrandCommandHandler>();
 
 
 builder.Services.AddControllers();
