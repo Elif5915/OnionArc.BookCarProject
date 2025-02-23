@@ -1,16 +1,17 @@
-﻿using OnionCarBook.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OnionCarBook.Application.Features.CQRS.Commands.CarCommands;
-public class CreateCarCommand
+namespace OnionCarBook.Application.Features.CQRS.Results.CarResult;
+public class GetCarWithBrandQueryResult
 {
-    //public int CarId { get; set; }
+    public int CarId { get; set; }
     public int BrandId { get; set; }
-   // public Brand Brand { get; set; }
+    public string BrandName { get; set; }
+
+    // public Brand Brand { get; set; }
     public string Model { get; set; }
     public string CoverImageuRL { get; set; }
     public int Km { get; set; }
