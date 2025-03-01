@@ -12,7 +12,7 @@ public class GetFeatureByIdQuery:IRequest<GetFeatureByIdQueryResult>
     public int Id { get; set; }
 
     public GetFeatureByIdQuery(int id)
-    {s
+    {
         Id = id;
     }
 }
