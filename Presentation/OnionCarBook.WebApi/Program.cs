@@ -6,6 +6,7 @@ using OnionCarBook.Application.Features.CQRS.Handlers.CategoryHandlers;
 using OnionCarBook.Application.Features.CQRS.Handlers.ContactHandlers;
 using OnionCarBook.Application.Interfaces;
 using OnionCarBook.Application.Interfaces.CarInterfaces;
+using OnionCarBook.Application.Services;
 using OnionCarBook.Persistence.Context;
 using OnionCarBook.Persistence.Repositories;
 using OnionCarBook.Persistence.Repositories.CarRepositories;
@@ -55,6 +56,8 @@ builder.Services.AddScoped<GetContactQueryHandler>();
 builder.Services.AddScoped<RemoveContactCommandHandler>();
 builder.Services.AddScoped<UpdateContactCommandHandler>();
 builder.Services.AddScoped<CreateContactCommandHandler>();
+
+builder.Services.AddApplicationService(builder.Configuration); // mediator olarak tanýmlanan constructorýmýz için DI uygulanmýþ olacak ve tek tek handler tanýmlamamýza gerek kalmayacak bu çaðýrdýðýmýz metod ile.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

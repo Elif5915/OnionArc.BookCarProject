@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OnionCarBook.Application.Features.Mediator.Commands.FeatureCommand;
 using OnionCarBook.Application.Features.Mediator.Queries.FeatureQueries;
 
 namespace OnionCarBook.WebApi.Controllers;
@@ -26,5 +27,23 @@ public class FeaturesController : ControllerBase
     {
        var value = await _mediator.Send(new GetFeatureByIdQuery(id));
         return Ok(value);
+    }
+    [HttpPost]
+    public async Task<IActionResult> CreateFeature(CreateFeatureCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok("Özellik başarıyla eklendi.");
+    }
+    [HttpDelete]
+    public async Task<IActionResult> RemoveFeature(int id)
+    {
+        await _mediator.Send(new RemoveFeatureCommand(id));
+        return Ok("Özellik başarıyla silindi.");
+    }
+    [HttpPut]
+    public async Task<IActionResult> UpdateFeature(UpdateFeatureCommand command)
+    {
+        await _mediator.Send(command);
+        return Ok("Özellik güncellendi");
     }
 }
