@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OnionCarBook.Application.Features.Mediator.Queries.LocationQueries;
-public class GetLocationByIdQuery : IRequest<GetLocationByIdQuery>
+public class GetLocationByIdQuery : IRequest<GetLocationByIdQueryResult>
 {
     public int Id { get; set; }
 
