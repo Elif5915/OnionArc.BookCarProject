@@ -9,7 +9,6 @@ namespace OnionCarBook.WebApi.Controllers;
 public class LocationController : ControllerBase
 {
     private readonly IMediator _mediator;
-
     public LocationController(IMediator mediator)
     {
         _mediator = mediator;
