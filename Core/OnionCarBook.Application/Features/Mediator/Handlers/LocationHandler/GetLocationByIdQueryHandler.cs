@@ -10,11 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OnionCarBook.Application.Features.Mediator.Handlers.LocationHandler;
-public class GetLocationByIdQueryHandler : IRequestHandler<GetLocationByIdQuery, GetLocationByIdQueryResult>
+public class GetTestimonialByIdQueryHandler : IRequestHandler<GetLocationByIdQuery, GetLocationByIdQueryResult>
 {
     private readonly IRepository<Location> _repository;
 
-    public GetLocationByIdQueryHandler(IRepository<Location> repository)
+    public GetTestimonialByIdQueryHandler(IRepository<Location> repository)
     {
         _repository = repository;
     }

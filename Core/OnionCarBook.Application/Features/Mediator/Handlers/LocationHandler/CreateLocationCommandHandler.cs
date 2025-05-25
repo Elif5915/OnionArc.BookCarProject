@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OnionCarBook.Application.Features.Mediator.Handlers.LocationHandler;
-public class CreateLocationCommandHandler : IRequestHandler<CreateLocationCommand>
+public class CreateTestimonialCommandHandler : IRequestHandler<CreateLocationCommand>
 {
     private readonly IRepository<Location> _repository;
 
-    public CreateLocationCommandHandler(IRepository<Location> repository)
+    public CreateTestimonialCommandHandler(IRepository<Location> repository)
     {
         _repository = repository;
     }

@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace OnionCarBook.Application.Features.Mediator.Handlers.LocationHandler;
-public class RemoveLocationCommandHandler : IRequestHandler<RemoveLocationCommand>
+public class RemoveTestimonialCommandHandler : IRequestHandler<RemoveLocationCommand>
 {
     private readonly IRepository<Location> _repository;
 
-    public RemoveLocationCommandHandler(IRepository<Location> repository)
+    public RemoveTestimonialCommandHandler(IRepository<Location> repository)
     {
         this._repository = repository;
     }
