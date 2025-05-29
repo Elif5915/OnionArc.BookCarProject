@@ -15,7 +15,7 @@ public class _TestimonialComponentPartial : ViewComponent
     public async Task<IViewComponentResult> InvokeAsync()
     {
         var client = _httpClientFactory.CreateClient();
-        var responseMessage = await client.GetAsync("https://localhost:7177/api/Testimonials");
+        var responseMessage = await client.GetAsync("https://localhost:7177/api/Testimonial");
         if (responseMessage.IsSuccessStatusCode)
         {
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
