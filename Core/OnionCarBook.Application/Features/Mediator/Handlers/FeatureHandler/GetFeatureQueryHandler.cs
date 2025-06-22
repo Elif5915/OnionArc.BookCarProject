@@ -3,11 +3,6 @@ using OnionCarBook.Application.Features.Mediator.Queries.FeatureQueries;
 using OnionCarBook.Application.Features.Mediator.Results.FeatureResult;
 using OnionCarBook.Application.Interfaces;
 using OnionCarBook.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnionCarBook.Application.Features.Mediator.Handlers.FeatureHandler;
 public class GetFeatureQueryHandler : IRequestHandler<GetFeatureQuery, List<GetFeatureQueryResult>>
