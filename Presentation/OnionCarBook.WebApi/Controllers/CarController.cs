@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using OnionCarBook.Application.Features.CQRS.Commands.CarCommands;
 using OnionCarBook.Application.Features.CQRS.Handlers.CarHandlers;
 using OnionCarBook.Application.Features.CQRS.Queries.CarQueries;
@@ -26,6 +25,7 @@ public class CarController : ControllerBase
         _updateCarCommandHandler = updateCarCommandHandler;
         _getCarWithBrandQueryHandler = getCarWithBrandQueryHandler;
         _getLast5CarsWithBrandQueryHandler = getLast5CarsWithBrandQueryHandler;
+ 
     }
 
     [HttpGet]
