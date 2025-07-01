@@ -24,7 +24,8 @@ public class GetAllBlogsWithAuthorQueryHandler : IRequestHandler<GetAllBlogsWith
             CategoryId = x.CategoryId,
             //CategoryName = x.Category.Name.ToString(),
             CreatedDate = x.CreatedDate,
-            CoverImageUrl = x.CoverImageUrl
+            CoverImageUrl = x.CoverImageUrl,
+            Description = x.Description
 
         }).ToList();
     }
